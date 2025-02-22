@@ -109,19 +109,32 @@
 .resume-button:hover {
     background-color: #e67e22; /* Darker gold on hover */
 }
-@media (max-width: 600px) {
-    table {
-        display: block; /* Use block display for the table */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        white-space: nowrap; /* Prevent text from wrapping */
-    }
-    
-    th, td {
-        display: inline-block; /* Display cells inline */
-        width: auto; /* Allow cells to take natural width */
-    }
-}
-
+/* @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th {
+                position: absolute;
+                left: -9999px;
+            }
+            tr {
+                margin-bottom: 15px;
+            }
+            td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: calc(50% - 20px);
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+            }
+        } */
     </style>
 </head>
 <body>
